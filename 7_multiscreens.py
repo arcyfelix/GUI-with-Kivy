@@ -16,8 +16,9 @@ class ScreenManagement(ScreenManager):
     pass
 
 MultiScreen = Builder.load_string('''
+#: import FadeTransition kivy.uix.screenmanager.FadeTransition
 ScreenManagement:
-    
+    transition: FadeTransition()
     MainScreen:
     AnotherScreen:
     LastScreen:

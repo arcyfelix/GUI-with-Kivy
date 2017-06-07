@@ -7,8 +7,8 @@ from kivy.uix.floatlayout import FloatLayout
 
 Builder.load_string('''
 <Button1>:
-    size_hint: 0.1, 0.2
-    color: 0,1,0,1
+    size_hint: 0.1, 0.1
+    color: 0,1,0,1 # RGB + transparency
     
 <Button2>:
     size_hint: 0.1, 0.1
@@ -16,33 +16,26 @@ Builder.load_string('''
 
 <FloatLayout>:
     Button1:
-        pos_hint: {"x": 0, 'y':0}
+        pos_hint: {"x": 0, 'y':0.45}
         text: "Wojciech"
-        #color: 1, 1, 0, 1
-        
-
+    
     Button2:
         pos_hint: {"x": 0.1, 'y':0}
         text: "Orzechowski"
-        #color: 1, 0, 0, 1 # RGB + transparency
-        	
-
+    
     Button1:
-        pos_hint: {"x": 0.2, 'y':0}
-        pos: 200,0
+        pos_hint: {"x": 0.45, 'y':0}
         text: "Github.com/arcyfelix"
-        #color: 1, 0, 0, 1
-        
         
     Button1:
-        size: 200, 100
     
         # Middle of the screen
+        #pos_hint: {"x": 0.45, "y": 0.45} 
         pos_hint: {"x": 0.5 - 0.5 * self.size_hint[0], "top": 0.5 + 0.5 * self.size_hint[1]} 
         text: "He loves Sara!"
         italic: True
         bold: True
-        #color: 1, 1, 1, 1
+        
 ''')
 
 # All the graphical data for the widget comes from the string loader

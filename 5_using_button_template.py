@@ -39,6 +39,8 @@ Builder.load_string('''
         # Middle of the screen
         pos: (0.5 * (root.width - self.width)), (0.5 * (root.height - self.height)) 
         text: "He loves Sara!"
+        italic: True
+        bold: True
         #color: 1, 1, 1, 1
 ''')
 
